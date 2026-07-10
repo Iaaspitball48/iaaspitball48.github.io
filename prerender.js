@@ -53,7 +53,7 @@ const ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZmNiODViODMwNWE5MmNkZTExN
 const BASE_URL = "https://api.themoviedb.org/3";
 const IMG_URL = "https://image.tmdb.org/t/p/w500";
 const BACKDROP_URL = "https://image.tmdb.org/t/p/original";
-const SITE_URL = "https://flixer.github.io";
+const SITE_URL = "https://watchflixer.github.io";
 const SITE_NAME = "Flixer";
 const DEFAULT_IMAGE = `${SITE_URL}/og-default.jpg`;
 
