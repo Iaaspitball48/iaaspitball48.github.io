@@ -1185,7 +1185,16 @@ function applyLanguage() {
     const brand = t("brand");
     document.getElementById("navbar-brand").innerText = brand;
     document.getElementById("side-brand").innerText = brand;
-    document.getElementById("footer-brand-flix").innerText = brand;
+    const footerBrandFlix = document.getElementById("footer-brand-flix");
+    if (brand === "FLIXER") {
+        // Latin-script languages: two-tone footer wordmark — "WATCH" plain, "FLIXER" red
+        document.getElementById("footer-brand").childNodes[0].nodeValue = "WATCH";
+        footerBrandFlix.innerText = "FLIXER";
+    } else {
+        // Non-Latin scripts: single-color transliterated brand, no split
+        document.getElementById("footer-brand").childNodes[0].nodeValue = "";
+        footerBrandFlix.innerText = brand;
+    }
 
     document.getElementById("footer-link-about").innerText = t("footer_about");
     document.getElementById("footer-link-privacy").innerText = t("footer_privacy");
