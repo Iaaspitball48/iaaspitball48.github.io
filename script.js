@@ -8,18 +8,18 @@ const ACCESS_TOKEN = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZmNiODViODMwNWE5MmNkZTExN
 // 🔐 YouTube Data API key — ginagamit lang bilang fallback kapag walang trailer
 // na nahanap sa TMDB (hal. napakaluma o obscure na title). Siguraduhing
 // naka-restrict ito sa "YouTube Data API v3" lang at sa domain mo
-// (HTTP referrer: https://flixer.github.io/*) sa Google Cloud Console.
+// (HTTP referrer: https://watchflixer.github.io/*) sa Google Cloud Console.
 const YOUTUBE_API_KEY = "AIzaSyCsBtdCTmpLiVj2TRiT0-wLQisvcM28URo";
 
 // 🌐 SEO: palitan kung ibang domain ang gagamitin mo (walang trailing slash)
-const SITE_URL = "https://flixer.github.io";
+const SITE_URL = "https://watchflixer.github.io";
 const SITE_NAME = "Flixer";
 
 // GitHub Pages project-page subfolder (repo name = "AllFLix1", kaya hindi ito
 // naka-host sa root "/" kundi sa "/AllFLix1/"). Ginagamit ito ng router para
 // tama ang binubuong URL (buildDetailPath) at ang pagbabasa ulit ng URL
 // (parseDetailPath), pati na rin sa mga history.replaceState/pushState calls.
-// Kung ire-rename mo ang repo papuntang "flixer.github.io" (user page sa root),
+// Kung ire-rename mo ang repo papuntang "watchflixer.github.io" (user page sa root),
 // palitan mo na lang ito ng "/".
 const BASE_PATH = "/";
 const DEFAULT_DESCRIPTION = "Watch the latest official trailers for movies, TV shows, K-Dramas, and anime from around the world. Always updated, free, no account required.";
