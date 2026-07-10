@@ -445,6 +445,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/titanic-1997-597</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/city-of-god-2002-598</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -500,6 +506,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/oldboy-2003-670</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/harry-potter-and-the-philosopher-s-stone-2001-671</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -668,6 +680,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/sliver-1993-867</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/cars-2006-920</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -913,6 +931,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/10-things-i-hate-about-you-1999-4951</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/bee-movie-2007-5559</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -1063,6 +1087,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/how-to-train-your-dragon-2010-10191</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/shrek-forever-after-2010-10192</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -1154,6 +1184,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/the-notebook-2004-11036</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/cinema-paradiso-1988-11216</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1561,6 +1597,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/man-of-steel-2013-49521</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/in-time-2011-49530</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -1717,7 +1759,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://flixer.github.io/movie/self-service-girls-1975-91884</loc>
+    <loc>https://flixer.github.io/movie/caged-fury-1990-91612</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1849,6 +1891,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/midnight-matinee-1988-137051</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/the-conjuring-2013-138843</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -1958,6 +2006,18 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/bridal-doll-1979-185673</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/rape-of-love-1978-186745</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/interrupted-lovers-1896-189270</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2132,6 +2192,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/incredibles-2-2018-260513</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/cars-3-2017-260514</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2827,6 +2893,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/soul-2020-508442</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/turning-red-2022-508947</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -3247,6 +3319,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/instinct-2019-735376</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/even-today-2025-735699</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -3325,6 +3403,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/girl-in-the-basement-2021-801335</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/kpop-demon-hunters-2025-803796</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -3344,6 +3428,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/flow-2024-823219</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/godzilla-x-kong-the-new-empire-2024-823464</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3643,12 +3733,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://flixer.github.io/movie/the-strangers-chapter-3-2026-1010755</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://flixer.github.io/movie/kung-fu-panda-4-2024-1011985</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -3907,6 +3991,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/chinese-four-given-names-people-prostitute-li-xiangjun-2005-1123261</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/freakier-friday-2025-1125257</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -4010,6 +4100,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/dune-part-three-2026-1170608</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/crime-101-2026-1171145</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4891,6 +4987,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://flixer.github.io/movie/infiltrate-2026-1472951</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://flixer.github.io/movie/minor-problem-2025-1475648</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -5011,12 +5113,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://flixer.github.io/movie/mexico-86-2026-1530510</loc>
-    <lastmod>2026-07-10</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://flixer.github.io/movie/the-trek-1532656</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
@@ -5030,6 +5126,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/jujutsu-kaisen-execution-2025-1539104</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/hippo-s-revenge-2025-1540365</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -5132,6 +5234,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/familia-a-la-deriva-2026-1591834</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/the-ogre-s-bride-2026-1592586</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -5288,6 +5396,12 @@
   </url>
   <url>
     <loc>https://flixer.github.io/movie/destination-north-2026-1650072</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://flixer.github.io/movie/ali-ali-2025-1650338</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
