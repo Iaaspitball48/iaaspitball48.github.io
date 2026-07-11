@@ -9,7 +9,7 @@ from xml.sax.saxutils import escape
 import requests
 
 BASE_URL = "https://api.themoviedb.org/3"
-SITE_URL = "https://flixer.github.io"
+SITE_URL = "https://watchflixer.github.io"
 
 ACCESS_TOKEN = os.environ.get("TMDB_TOKEN") or "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1ZmNiODViODMwNWE5MmNkZTExNWYwMzY1OTUxOWM1NSIsIm5iZiI6MTc4MzcxMjU4OS40NDk5OTk4LCJzdWIiOiI2YTUxNGI0ZDRiZjc2YjNhMWUyMDViZTAiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.NgKb4cPoDCjlDNcUuwnQ2AbDDtsztcNevBTMMCURy4M"
 
